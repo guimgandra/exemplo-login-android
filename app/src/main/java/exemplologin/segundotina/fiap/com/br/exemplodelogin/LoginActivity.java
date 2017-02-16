@@ -32,4 +32,11 @@ import android.widget.Toast;
          }
 
      }
+
+
+     public void cadastrar(View v) {
+         Intent it = new Intent( CadastrarActivity.class);
+         startActivity(it);
+
+     }
 }

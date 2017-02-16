@@ -11,10 +11,20 @@
     android:orientation="vertical"
     tools:context="exemplologin.segundotina.fiap.com.br.exemplodelogin.LoginActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/raio"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        />
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/usuario" />
+        android:text="@string/usuario"
+        android:singleLine="true"/>
 
 
     <EditText
@@ -35,11 +45,32 @@
         android:inputType="textPassword"
         />
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/btnLogin"
-        android:onClick="Logar"
-        />
+        android:orientation="horizontal"
+        android:layout_margin="60px">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:id="@+id/btnLogin"
+            android:layout_weight="1"
+            android:onClick="Logar"
+            android:drawableLeft="@drawable/lock"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastrar"
+            android:layout_weight="1"
+            android:id="@+id/btnCadastrar"
+            android:drawableLeft="@drawable/cadastrar"
+
+            />
+
+
+    </LinearLayout>
 </LinearLayout>
